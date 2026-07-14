@@ -5,10 +5,13 @@
   "compilerOptions": {
     "types": []
   },
+  "files":[
+    "frontend/main.ts"
+  ],
   "include": [
-    "src/**/*.ts"
+    "frontend/src/**/*.ts"
   ],
   "exclude": [
-    "src/**/*.spec.ts"
+    "frontend/src/**/*.spec.ts"
   ]
 }

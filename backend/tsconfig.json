@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    // ===== UBICACIÓN DE ARCHIVOS =====
+    "rootDir": "./src",
+    "outDir": "./dist",
+    
+    // ===== CONFIGURACIÓN PARA NODE.JS CON ES MODULES =====
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "types": ["node"],
+    
+    // ===== OPCIONES DE SALIDA =====
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "removeComments": true,
+    
+    // ===== OPCIONES ESTRICTAS =====
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+    
+    // ===== OPCIONES DE MÓDULOS =====
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    
+    // ===== OPCIONES DE RENDIMIENTO =====
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}
