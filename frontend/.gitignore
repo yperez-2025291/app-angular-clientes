@@ -1,0 +1,19 @@
+# Frontend específico
+node_modules/
+dist/
+.angular/
+.env
+*.log
+
+# Archivos de Angular
+src/**/*.js
+src/**/*.js.map
+src/**/*.d.ts
+
+# Reportes de pruebas
+coverage/
+test-results/
+
+# Configuraciones de entorno
+src/environments/*.ts
+!src/environments/environment.ts

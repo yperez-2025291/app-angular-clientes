@@ -1,1 +1,13 @@
+# Backend específico
 node_modules/
+dist/
+.env
+*.log
+
+# Datos locales (si usas JSON como DB)
+data/*.json
+!data/.gitkeep
+
+# Configuraciones de PostgreSQL locales
+*.sqlite
+*.db

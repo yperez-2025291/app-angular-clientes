@@ -1,44 +1,74 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
-
-# Node
+# ============================================
+# DEPENDENCIAS
+# ============================================
 node_modules/
-npm-debug.log
-yarn-error.log
+.pnpm-store/
 
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# ============================================
+# COMPILACIÓN Y BUILD
+# ============================================
+dist/
+build/
+out/
+.angular/
+*.js.map
+*.d.ts.map
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/mcp.json
-.history/*
+# ============================================
+# VARIABLES DE ENTORNO (¡NO SUBIR CREDENCIALES!)
+# ============================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
-__screenshots__/
+# ============================================
+# LOGS
+# ============================================
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# System files
+# ============================================
+# SISTEMA OPERATIVO
+# ============================================
 .DS_Store
 Thumbs.db
+*.tmp
+*.temp
+
+# ============================================
+# IDE Y EDITORES
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ============================================
+# CACHÉ
+# ============================================
+.cache/
+*.tsbuildinfo
+.eslintcache
+.prettiercache
+
+# ============================================
+# PRUEBAS Y COBERTURA
+# ============================================
+coverage/
+test-results/
+.nyc_output/
+
+# ============================================
+# ARCHIVOS DE RESPALDO
+# ============================================
+*.bak
+*.backup

@@ -7,12 +7,16 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/app.js",
-    "dev": "nodemon --exec ts-node --esm --experimental-specifier-resolution=node src/app.ts",
-    "clean": "rm -rf dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --exec tsx src/app.ts",
+    "clean": "rm -rf dist"
   },
-  "keywords": ["api", "clientes", "express", "postgresql"],
-  "author": "Tu Nombre",
+  "keywords": [
+    "api",
+    "clientes",
+    "express",
+    "postgresql"
+  ],
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/cors": "^2.8.19",
@@ -21,6 +25,7 @@
     "@types/pg": "^8.20.0",
     "nodemon": "^3.1.14",
     "ts-node": "^10.9.2",
+    "tsx": "^4.23.1",
     "typescript": "~6.0.3"
   },
   "dependencies": {
