@@ -15,7 +15,7 @@ out/
 *.d.ts.map
 
 # ============================================
-# VARIABLES DE ENTORNO (¡NO SUBIR CREDENCIALES!)
+# VARIABLES DE ENTORNO (¡No subir credenciales!)
 # ============================================
 .env
 .env.local
@@ -72,3 +72,14 @@ test-results/
 # ============================================
 *.bak
 *.backup
+
+# ============================================
+# BACKEND ESPECÍFICO
+# ============================================
+backend/data/*.json
+!backend/data/.gitkeep
+
+# ============================================
+# FRONTEND ESPECÍFICO
+# ============================================
+frontend/.angular/
